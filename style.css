@@ -1,0 +1,128 @@
+/* Global reset & background setup */
+body {
+  margin: 0;
+  background-color: #F7ECDB;
+  display: flex;
+  justify-content: center;   /* horizontally center content */
+  align-items: flex-start;    /* align content at the top */
+  min-height: 100vh;
+  font-family: sans-serif;    /* Fallback font */
+}
+
+/* Container centers content horizontally and ensures responsiveness */
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto; /* Only horizontal margins auto; vertical margin is 0 */
+  padding-top: 20px; /* Adjust top padding as needed */
+}
+
+/* Top caption styling using Pixelify Sans */
+.caption-top {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Bottom caption styling using Pixelify Sans */
+.caption-bottom {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Responsive image styling */
+.big-picture {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Red box styling (for page2) */
+.red-box {
+  background-color: red;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  /* Set an aspect ratio similar to the image; here we use 16:9 as an example */
+  aspect-ratio: 16 / 9;
+  /* Alternatively, you can use a fixed height, e.g.: height: 300px; */
+}
+
+/* Centered text inside the red box */
+.box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Clue section styling */
+.clue-section {
+  margin-top: 20px;
+}
+
+/* Input wrapper to align input and button inline */
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the clue input */
+.clue-input {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  text-align: center;  /* Center text inside the input */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Styling for the submit button */
+.submit-button {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ccc;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #bbb;
+}
+
+/* ... your existing styles above ... */
+
+/* Webview container: fill a big portion of the screen so users on mobile 
+   don't have to scroll inside the iframe. */
+.webview-container {
+  width: 100%;          /* Let it take full width of the container */
+  max-width: 800px;     /* Constrain it on larger screens if desired */
+  margin: 0 auto;
+  height: 80vh;         /* Occupy 80% of the viewport height */
+  position: relative;
+  overflow: hidden;     /* Hide any internal iframe scrollbars */
+}
+
+/* The iframe itself takes the entire container space */
+.webview {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ... rest of your CSS below ... */
+

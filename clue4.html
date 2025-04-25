@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>complete the wordle!</title>
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Load Pixelify Sans from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Pixelify+Sans" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Top caption -->
+    <h1 class="caption-top">complete the wordle!</h1>
+    
+    <!-- Taller, responsive iframe container -->
+    <div class="webview-container">
+      <iframe 
+        src="https://mywordle.strivemath.com/?word=svrop"
+        class="webview"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+    
+    <!-- Clue section at the bottom -->
+    <div class="clue-section">
+      <label for="clue-input" class="caption-bottom">have the next clue?</label>
+      <div class="input-wrapper">
+        <input type="text" id="clue-input" class="clue-input" placeholder="enter here">
+        <button type="submit" class="submit-button">Submit</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
